@@ -1,5 +1,26 @@
+@font-face {
+    font-family: 'Comic Neue';
+    src: url('fonts/Comic_Neue/ComicNeue-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+:root {
+    --font-family: 'Comic Neue', cursive, 'Tahoma';
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: var(--font-family);
 }
