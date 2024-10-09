@@ -1,13 +1,12 @@
 @font-face {
     font-family: 'Comic Neue';
     src: url('fonts/Comic_Neue/ComicNeue-Light.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
 }
 
-
 :root {
-    --font-family: 'Comic Neue', cursive, 'Tahoma';
+    --font-family: 'Comic Neue', sans-serif;
 }
 
 * {
@@ -18,9 +17,93 @@
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #6f6f6f;
+    font-weight: 600;
+}
+a:hover {
+    color: #f00;
+}
+
+ul, ol, p {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+ul > li {
+    list-style: circle inside;
+}
+
+
+
+img {
+    height: auto;
+    max-width: 20rem;
+    object-fit: cover;
 }
 
 body {
     font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    background: linear-gradient(to right, #283048, #859398);
+}
+
+.main-container{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.logo {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 2rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+.recipe {
+    width: 45%;
+    height:125vh;
+    margin: 1rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px double black;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+.recipe-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-bottom:  1px solid black;
+}
+
+.recipe > img {
+    align-self: center;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1.5rem;
+}
+
+.recipe > p:nth-of-type(1) {
+    text-align: center;
+}
+
+footer p {
+    color: aliceblue;
+}
+span {
+    font-weight: bold;
 }
